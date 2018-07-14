@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.com.cedran</groupId>
-    <artifactId>city-service</artifactId>
+    <artifactId>route-service</artifactId>
     <version>0.1.0</version>
 
     <parent>

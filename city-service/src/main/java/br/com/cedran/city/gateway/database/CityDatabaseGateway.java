@@ -1,36 +1,44 @@
 package br.com.cedran.city.gateway.database;
 
 import br.com.cedran.city.gateway.CityGateway;
+import br.com.cedran.city.gateway.assembler.CityAssembler;
+import br.com.cedran.city.gateway.database.mysql.CityDatabaseRepository;
+import br.com.cedran.city.gateway.database.mysql.entity.CityEntity;
 import br.com.cedran.city.model.City;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
+@AllArgsConstructor
 public class CityDatabaseGateway implements CityGateway {
+
+    private CityDatabaseRepository cityDatabaseRepository;
 
     @Override
     public City obtainByName(String name) {
-        return null;
+        return  cityDatabaseRepository.findByNameContainingIgnoreCase(name).map(cityEntity -> CityAssembler.fromCityEntity(cityEntity, false)).orElse(null);
     }
 
     @Override
     public City obtainById(Long id) {
-        return null;
+        return cityDatabaseRepository.findById(id).map(cityEntity -> CityAssembler.fromCityEntity(cityEntity, false)).orElse(null);
     }
 
     @Override
     public City create(City city) {
-        return null;
+        CityEntity cityEntity = cityDatabaseRepository.save(CityAssembler.fromCity(city));
+        return CityAssembler.fromCityEntity(cityEntity, false);
     }
 
     @Override
     public City update(City city) {
-        return null;
+        CityEntity cityEntity = cityDatabaseRepository.save(CityAssembler.fromCity(city));
+        return CityAssembler.fromCityEntity(cityEntity, false);
     }
 
     @Override
-    public List<City> obtainByIds(List<Long> citiesIds) {
-        return null;
+    public City obtainByIdWithDestinations(Long cityId) {
+        return cityDatabaseRepository.obtainByIdWithDestinations(cityId).map(cityEntity -> CityAssembler.fromCityEntity(cityEntity, true)).orElse(null);
     }
+
 }

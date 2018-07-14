@@ -5,16 +5,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.Duration;
 import java.util.List;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class City {
+public class Destination {
 
     private Long id;
-    private String name;
-    private List<Destination> destinations;
-
+    private City originCity;
+    private City destinationCity;
+    private Duration journeyTime;
 }

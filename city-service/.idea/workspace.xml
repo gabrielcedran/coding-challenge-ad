@@ -12,58 +12,106 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/city_service$All_in_city_service.ic" NAME="All in city-service Coverage Results" MODIFIED="1531430068345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/city_service$All_in_city_service.ic" NAME="All in city-service Coverage Results" MODIFIED="1531597042636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/city_service$All_in_route_service.ic" NAME="All in route-service Coverage Results" MODIFIED="1531575347625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/city_service$All_in_city_service__3_.ic" NAME="All in city-service (3) Coverage Results" MODIFIED="1531431327920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/city_service$All_in_city_service__2_.ic" NAME="All in city-service (2) Coverage Results" MODIFIED="1531430645463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/city_service$All_in_city_service__1_.ic" NAME="All in city-service (1) Coverage Results" MODIFIED="1531430746343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/city_service$All_in_city_service__1_.ic" NAME="All in city-service (1) Coverage Results" MODIFIED="1531596280092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="0" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../route-service/pom.xml">
+      <file leaf-file-name="ObtainCityWithDestinationsSpec.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/ObtainCityWithDestinationsSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CalculateShortestRouteSpec.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../route-service/src/test/groovy/br.com.cedran.route/usecase/CalculateShortestRouteSpec.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3690">
-              <caret line="254" column="29" selection-start-line="254" selection-start-column="29" selection-end-line="254" selection-end-column="29" />
+            <state relative-caret-position="570">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
               <folding>
-                <element signature="e#37#83#0" expanded="true" />
+                <element signature="e#28#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculateShortestRoute.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/usecase/CalculateShortestRoute.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="612">
+              <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Arrays.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/util/Arrays.java">
+      <file leaf-file-name="CityController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/web/CityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63510">
-              <caret line="4307" column="30" selection-start-line="4307" selection-start-column="30" selection-end-line="4307" selection-end-column="30" />
-              <folding>
-                <element signature="e#200641#200642#0" expanded="true" />
-                <element signature="e#200682#200683#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="15" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySqlConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/configuration/MySqlConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddDestinationToCity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/AddDestinationToCity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Destination.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/Destination.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="City.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/City.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -86,48 +134,73 @@
       <find>.1-groovy-2.</find>
       <find>hour</find>
       <find>remove</find>
+      <find>processingCity</find>
+      <find>toBeProcessed</find>
+      <find>spring-boot-starter-data-jpa</find>
+      <find>obtainByOriginId</find>
+      <find>h2</find>
+      <find>va</find>
+      <find>br.com.cedran.city.gateway.database</find>
+      <find>EnableJpaRepositories</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/CityController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/entity/City.java" />
-        <option value="$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/CreateCity.groovy" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/City.java" />
-        <option value="$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/CreateCitySpec.groovy" />
-        <option value="$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/UpdateCitySpec.groovy" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/Connection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/Destination.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/destination/usecase/CreateDestination.java" />
-        <option value="$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/ValidateConnectionsSpec.groovy" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/ValidateConnections.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/DestinationGateway.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/CreateDestination.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/UpdateCity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/CityGateway.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/CityDatabaseGateway.java" />
-        <option value="$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/ValidateRouteSpec.groovy" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/BusinessErrors.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/CreateCity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/ValidateRoute.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/Journey.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/exceptions/BusinessException.java" />
-        <option value="$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/CreateJourneySpec.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/JourneyGateway.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/BusinessError.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/CreateJourney.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/UpdateJourney.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/Scheduling.java" />
         <option value="$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/gateway/CityGateway.java" />
-        <option value="$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/model/Destination.java" />
         <option value="$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/model/City.java" />
-        <option value="$PROJECT_DIR$/../route-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/usecase/CalculateShortestRoute.java" />
+        <option value="$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/model/Destination.java" />
         <option value="$PROJECT_DIR$/../route-service/src/test/groovy/br.com.cedran.route/usecase/CalculateShortestRouteSpec.groovy" />
+        <option value="$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/usecase/CalculateShortestRoute.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/City.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/ValidateRoute.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/UpdateCity.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/ValidateRouteSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/UpdateCitySpec.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/exceptions/BusinessException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/AddDestinationToCity.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/AddDestinationToCitySpec.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/RemoveDestinationFromCity.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/RemoveDestinationFromCitySpec.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/Destination.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/ObtainCityWithDestinations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/entity/CityEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/entity/DestinationEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/CityDatabaseRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/DestinationDatabaseRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/mysql/entity/DestinationDatabaseRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/mysql/entity/CityDatabaseRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/cedran/city/gateway/database/config/MySqlTestConfig.java" />
+        <option value="$PROJECT_DIR$/../route-service/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/mysql/entity/CityEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/mysql/DestinationDatabaseRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/mysql/entity/DestinationEntity.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/sql/city.sql" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/cedran/city/gateway/database/configuration/MySqlTestConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/assembler/CityAssembler.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/sql/city_gateway_test.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/CityGateway.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/mysql/CityDatabaseRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/CityDatabaseGateway.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/assembler/DestinationAssembler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/cedran/city/gateway/database/CityDatabaseGatewayTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/DestinationGateway.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/DestinationDatabaseGateway.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/cedran/city/gateway/database/DestinationGatewayTest.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/ObtainCityWithDestinationsSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/configuration/MySqlConfiguration.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -150,8 +223,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,120 +234,7 @@
             </path>
             <path>
               <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="city-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="city-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="city-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="city-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="br.com.cedran.city" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
               <item name="route-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="route-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="route-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="route-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="route-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="route" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="route-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="route" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="route-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="route" type="462c0819:PsiDirectoryNode" />
-              <item name="usecase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="route-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="route-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="route-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="usecase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-lang3:3.7" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-lang3:3.7" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-lang3-3.7.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="city-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-lang3:3.7" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-lang3-3.7.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="lang3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -284,20 +244,24 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../route-service" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.cedran.city.gateway.database.mysql" />
       <recent name="br.com.cedran.destination" />
       <recent name="br.com.cedran" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="br.com.cedran.city.usecase" />
+      <recent name="br.com.cedran.city.gateway.database.configuration" />
+      <recent name="br.com.cedran.city.gateway.database" />
       <recent name="br.com.cedran.city" />
+      <recent name="br.com.cedran.city.usecase" />
       <recent name="br.com.cedran.city.gateway.database.entity" />
     </key>
   </component>
@@ -313,24 +277,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CalculateShortestRouteSpec.test 4">
+  <component name="RunManager" selected="JUnit.All in city-service (2)">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.cedran.city.Application" />
+      <module name="city-service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.cedran.city.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="CalculateShortestRouteSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="route-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.cedran.route.usecase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="All in city-service (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="city-service" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="br.com.cedran.route.usecase" />
-      <option name="MAIN_CLASS_NAME" value="br.com.cedran.route.usecase.CalculateShortestRouteSpec" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -340,20 +309,14 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CalculateShortestRouteSpec.test 2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="route-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.cedran.route.usecase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="All in city-service (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="city-service" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="br.com.cedran.route.usecase" />
-      <option name="MAIN_CLASS_NAME" value="br.com.cedran.route.usecase.CalculateShortestRouteSpec" />
-      <option name="METHOD_NAME" value="test 2" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -363,20 +326,14 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CalculateShortestRouteSpec.test 3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="route-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.cedran.route.usecase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="All in city-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="city-service" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="br.com.cedran.route.usecase" />
-      <option name="MAIN_CLASS_NAME" value="br.com.cedran.route.usecase.CalculateShortestRouteSpec" />
-      <option name="METHOD_NAME" value="test 3" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -386,42 +343,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CalculateShortestRouteSpec.test 4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="route-service" />
+    <configuration name="ObtainCityWithDestinationsSpec.obtain city with its destinations by id" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="city-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.cedran.route.usecase.*" />
+          <option name="PATTERN" value="br.com.cedran.city.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="br.com.cedran.route.usecase" />
-      <option name="MAIN_CLASS_NAME" value="br.com.cedran.route.usecase.CalculateShortestRouteSpec" />
-      <option name="METHOD_NAME" value="test 4" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="CalculateShortestRouteSpec.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="route-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.cedran.route.usecase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="br.com.cedran.route.usecase" />
-      <option name="MAIN_CLASS_NAME" value="br.com.cedran.route.usecase.CalculateShortestRouteSpec" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="br.com.cedran.city" />
+      <option name="MAIN_CLASS_NAME" value="br.com.cedran.city.ObtainCityWithDestinationsSpec" />
+      <option name="METHOD_NAME" value="obtain city with its destinations by id" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -471,19 +405,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.CalculateShortestRouteSpec.test" />
-      <item itemvalue="JUnit.CalculateShortestRouteSpec.test 2" />
-      <item itemvalue="JUnit.CalculateShortestRouteSpec" />
-      <item itemvalue="JUnit.CalculateShortestRouteSpec.test 3" />
-      <item itemvalue="JUnit.CalculateShortestRouteSpec.test 4" />
+      <item itemvalue="JUnit.All in city-service (1)" />
+      <item itemvalue="JUnit.ObtainCityWithDestinationsSpec.obtain city with its destinations by id" />
+      <item itemvalue="JUnit.All in city-service" />
+      <item itemvalue="Application.Application" />
+      <item itemvalue="JUnit.All in city-service (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CalculateShortestRouteSpec.test 4" />
-        <item itemvalue="JUnit.CalculateShortestRouteSpec.test 3" />
-        <item itemvalue="JUnit.CalculateShortestRouteSpec" />
-        <item itemvalue="JUnit.CalculateShortestRouteSpec.test" />
-        <item itemvalue="JUnit.CalculateShortestRouteSpec.test 2" />
+        <item itemvalue="JUnit.All in city-service (2)" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.All in city-service" />
+        <item itemvalue="JUnit.ObtainCityWithDestinationsSpec.obtain city with its destinations by id" />
+        <item itemvalue="JUnit.All in city-service (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -501,35 +435,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CalculateShortestRouteSpec - 2018.07.14 at 00h 22m 34s.xml">
-      <configuration name="CalculateShortestRouteSpec" configurationId="JUnit" />
+    <history-entry file="DestinationGatewayTest_test_create_destination - 2018.07.14 at 21h 19m 00s.xml">
+      <configuration name="DestinationGatewayTest.test_create_destination" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculateShortestRouteSpec_test_3 - 2018.07.14 at 00h 45m 45s.xml">
-      <configuration name="CalculateShortestRouteSpec.test 3" configurationId="JUnit" />
+    <history-entry file="DestinationGatewayTest_test_create_destination - 2018.07.14 at 21h 19m 18s.xml">
+      <configuration name="DestinationGatewayTest.test_create_destination" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculateShortestRouteSpec_test_3 - 2018.07.14 at 00h 47m 24s.xml">
-      <configuration name="CalculateShortestRouteSpec.test 3" configurationId="JUnit" />
+    <history-entry file="DestinationGatewayTest - 2018.07.14 at 21h 24m 35s.xml">
+      <configuration name="DestinationGatewayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculateShortestRouteSpec_test_4 - 2018.07.14 at 00h 48m 28s.xml">
-      <configuration name="CalculateShortestRouteSpec.test 4" configurationId="JUnit" />
+    <history-entry file="All_in_city-service_(1) - 2018.07.14 at 21h 24m 58s.xml">
+      <configuration name="All in city-service (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculateShortestRouteSpec_test_4 - 2018.07.14 at 00h 50m 25s.xml">
-      <configuration name="CalculateShortestRouteSpec.test 4" configurationId="JUnit" />
+    <history-entry file="ObtainCityWithDestinationsSpec_obtain_city_with_its_destinations_by_id - 2018.07.14 at 21h 34m 56s.xml">
+      <configuration name="ObtainCityWithDestinationsSpec.obtain city with its destinations by id" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculateShortestRouteSpec_test_4 - 2018.07.14 at 00h 51m 24s.xml">
-      <configuration name="CalculateShortestRouteSpec.test 4" configurationId="JUnit" />
+    <history-entry file="ObtainCityWithDestinationsSpec_obtain_city_with_its_destinations_by_id - 2018.07.14 at 21h 35m 10s.xml">
+      <configuration name="ObtainCityWithDestinationsSpec.obtain city with its destinations by id" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculateShortestRouteSpec_test_4 - 2018.07.14 at 00h 51m 31s.xml">
-      <configuration name="CalculateShortestRouteSpec.test 4" configurationId="JUnit" />
+    <history-entry file="ObtainCityWithDestinationsSpec_obtain_city_with_its_destinations_by_id - 2018.07.14 at 21h 37m 02s.xml">
+      <configuration name="ObtainCityWithDestinationsSpec.obtain city with its destinations by id" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculateShortestRouteSpec_test_4 - 2018.07.14 at 00h 55m 07s.xml">
-      <configuration name="CalculateShortestRouteSpec.test 4" configurationId="JUnit" />
+    <history-entry file="ObtainCityWithDestinationsSpec_obtain_city_with_its_destinations_by_id - 2018.07.14 at 21h 37m 15s.xml">
+      <configuration name="ObtainCityWithDestinationsSpec.obtain city with its destinations by id" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculateShortestRouteSpec_test_4 - 2018.07.14 at 00h 55m 59s.xml">
-      <configuration name="CalculateShortestRouteSpec.test 4" configurationId="JUnit" />
+    <history-entry file="All_in_city-service - 2018.07.14 at 21h 37m 40s.xml">
+      <configuration name="All in city-service" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalculateShortestRouteSpec_test_4 - 2018.07.14 at 00h 56m 23s.xml">
-      <configuration name="CalculateShortestRouteSpec.test 4" configurationId="JUnit" />
+    <history-entry file="All_in_city-service_(2) - 2018.07.14 at 21h 42m 10s.xml">
+      <configuration name="All in city-service (2)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -548,7 +482,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -564,6 +498,35 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32946146" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32946146" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32946146" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3296875" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -572,84 +535,449 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/CreateJourneySpec.groovy</url>
-          <line>53</line>
+          <url>file://$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/AddDestinationToCitySpec.groovy</url>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/usecase/CalculateShortestRoute.java</url>
-          <line>30</line>
+          <line>41</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/usecase/CalculateShortestRoute.java</url>
-          <line>67</line>
+          <line>48</line>
           <properties />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/usecase/CalculateShortestRoute.java</url>
-          <line>34</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/AddDestinationToCity.java</url>
+          <line>36</line>
           <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/AddDestinationToCity.java</url>
+          <line>28</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/CityDatabaseGateway.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/CityDatabaseGateway.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/cedran/city/gateway/database/CityDatabaseGatewayTest.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/CityDatabaseGateway.java</url>
+          <line>40</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="34" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>city.getDestinations()</expression-string>
+        <expression-string>cityDatabaseRepository.obtainByIdWithDestinations(cityId)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>toBeProcessed</expression-string>
+        <expression-string>city</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>processedCities</expression-string>
+        <expression-string>cityEntity.getDestinations()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>processedCities.get(cityOrigin)</expression-string>
+        <expression-string>Hibernate.isInitialized(cityEntity.getDestinations())</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.hibernate.Hibernate</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cityEntity</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>processedCities.get(cityOrigin).get(cityDestination)</expression-string>
+        <expression-string>cityGateway.obtainByIdWithDestinations(1L)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>journey.journeyTime.toSecondOfDay()</expression-string>
-        <language-id>Groovy</language-id>
+        <expression-string>cityDatabaseRepository.obtainByIdWithDestinations(1L)</expression-string>
+        <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>journey.journeyTime.get(java.time.temporal.ChronoField.SECOND_OF_DAY)</expression-string>
-        <language-id>Groovy</language-id>
+        <expression-string>(Optional.ofNullable(originCity.getDestinations()).orElse(Collections.emptyList()).stream().anyMatch(destinationCity -&gt; destinationCity.getDestinationCity().getId().equals(destinationCityId)))</expression-string>
+        <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>journey.journeyTime.get(java.time.temporal.ChronoField.SECOND_OF_MINUTE)</expression-string>
-        <language-id>Groovy</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>journey.journeyTime.second</expression-string>
-        <language-id>Groovy</language-id>
+        <expression-string>Optional.ofNullable(originCity.getDestinations()).orElse(Collections.emptyList()).stream().anyMatch(destinationCity -&gt; destinationCity.getDestinationCity().getId().equals(destinationCityId))</expression-string>
+        <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/exceptions/BusinessException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.8.RELEASE/spring-data-commons-2.0.8.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../route-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/cedran/city/gateway/database/config/MySqlTestConfig.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.8.RELEASE/spring-data-commons-2.0.8.RELEASE.jar!/org/springframework/data/repository/query/Param.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.7.RELEASE/spring-test-5.0.7.RELEASE.jar!/org/springframework/test/context/jdbc/Sql.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.7.RELEASE/spring-tx-5.0.7.RELEASE.jar!/org/springframework/transaction/annotation/Transactional.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.3.RELEASE/spring-boot-2.0.3.RELEASE.jar!/org/springframework/boot/SpringBootConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.7.RELEASE/spring-test-5.0.7.RELEASE.jar!/org/springframework/test/context/ContextConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.7.RELEASE/spring-test-5.0.7.RELEASE-sources.jar!/org/springframework/test/context/ContextConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test/2.0.3.RELEASE/spring-boot-test-2.0.3.RELEASE.jar!/org/springframework/boot/test/context/SpringBootTest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/cedran/city/gateway/database/configuration/MySqlTestConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.7.RELEASE/spring-aop-5.0.7.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.7.RELEASE/spring-tx-5.0.7.RELEASE.jar!/org/springframework/transaction/annotation/Propagation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.7.RELEASE/spring-core-5.0.7.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/mysql/entity/CityEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.17.Final/hibernate-core-5.2.17.Final.jar!/org/hibernate/collection/internal/PersistentBag.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="240" selection-start-line="240" selection-end-line="240" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.7.RELEASE/spring-tx-5.0.7.RELEASE-sources.jar!/org/springframework/transaction/annotation/Propagation.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.7.RELEASE/spring-test-5.0.7.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestExecutionCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/sql/city_gateway_test.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/mysql/DestinationDatabaseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/mysql/CityDatabaseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/CityDatabaseGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/CityGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/assembler/CityAssembler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/cedran/city/gateway/database/CityDatabaseGatewayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/CreateCity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/AddDestinationToCitySpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="110" column="14" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
+          <folding>
+            <element signature="e#28#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/RemoveDestinationFromCity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/DestinationGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/mysql/entity/DestinationEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/assembler/DestinationAssembler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/DestinationDatabaseGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="92" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/cedran/city/gateway/database/DestinationGatewayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="116" column="87" selection-start-line="116" selection-start-column="87" selection-end-line="116" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/RemoveDestinationFromCitySpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/ObtainCityWithDestinations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/CreateCitySpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#28#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/Destination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/ObtainCityWithDestinationsSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#28#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/AddDestinationToCity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/web/CityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/configuration/MySqlConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -657,341 +985,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/web/CityController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state>
+          <caret selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/lang/IllegalArgumentException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/entity/City.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spockframework/spock-core/1.1-groovy-2.4-rc-2/spock-core-1.1-groovy-2.4-rc-2.jar!/org/spockframework/lang/SpecInternals.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/util/stream/Collectors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="1404" column="30" selection-start-line="1404" selection-start-column="30" selection-end-line="1404" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/ValidateConnections.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/Connection.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/CityGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/database/CityDatabaseGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/ValidateRouteSpec.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/ValidateRoute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/CreateCity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/CreateCitySpec.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="29" selection-start-line="29" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/time/temporal/TemporalField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/time/temporal/ChronoField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/time/Clock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="139" column="22" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/time/Period.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="132" column="19" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/time/OffsetTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="117" column="19" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/time/LocalTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/time/temporal/TemporalUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1777">
-          <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/gateway/JourneyGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/UpdateCitySpec.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/exceptions/BusinessException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/BusinessError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/UpdateCity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/UpdateJourney.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="37" column="101" selection-start-line="37" selection-start-column="101" selection-end-line="37" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/usecase/CreateJourney.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/Scheduling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/Journey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/cedran/city/model/City.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="1073" column="20" selection-start-line="1073" selection-start-column="20" selection-end-line="1073" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/util/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-562">
-          <caret line="108" column="17" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/util/SortedMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/gateway/CityGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/time/Duration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="132" column="19" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/model/City.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/model/Destination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/br.com.cedran.city/CreateJourneySpec.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="90" column="25" lean-forward="true" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
-          <folding>
-            <element signature="e#28#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/util/TreeMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="1656" column="33" selection-start-line="1656" selection-start-column="27" selection-end-line="1656" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/spockframework/spock-core/1.1-groovy-2.4-rc-2/spock-core-1.1-groovy-2.4-rc-2.jar!/org/spockframework/util/ReflectionUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="188" selection-start-line="188" selection-end-line="188" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/jdk/internal/reflect/DelegatingMethodAccessorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jdk-9.0.4/lib/src.zip!/java.base/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63510">
-          <caret line="4307" column="30" selection-start-line="4307" selection-start-column="30" selection-end-line="4307" selection-end-column="30" />
-          <folding>
-            <element signature="e#200641#200642#0" expanded="true" />
-            <element signature="e#200682#200683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../route-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../route-service/src/test/groovy/br.com.cedran.route/usecase/CalculateShortestRouteSpec.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3690">
-          <caret line="254" column="29" selection-start-line="254" selection-start-column="29" selection-end-line="254" selection-end-column="29" />
-          <folding>
-            <element signature="e#37#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../route-service/src/main/java/br/com/cedran/route/usecase/CalculateShortestRoute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="612">
+          <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1052,7 +1056,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -19,7 +19,7 @@ class UpdateCitySpec extends Specification {
 
     def "Update city successfully"() {
         given: "an existent city with id 1 and name Zaragoza"
-        City city = new City(1L, "Zaragoza")
+        City city = new City(1L, "Zaragoza", null)
         and: "that city already exists"
         cityGateway.obtainById(1L) >> city
         and: "the city name is updated to a non existent one"
@@ -38,7 +38,7 @@ class UpdateCitySpec extends Specification {
 
     def "Update city not changing the name successfully"() {
         given: "an existent city with id 1 and name Zaragoza"
-        City city = new City(1L, "Zaragoza")
+        City city = new City(1L, "Zaragoza", null)
         and: "that city name exists associated to the city being updated"
         cityGateway.obtainById(1L) >> city
         and: "the city already exists"
@@ -57,11 +57,11 @@ class UpdateCitySpec extends Specification {
 
     def "Update city name to an existent one"() {
         given: "an existent city with id 1 and name Zaragoza"
-        City city = new City(1L, "Zaragoza")
+        City city = new City(1L, "Zaragoza", null)
         and: "the city has the name updated"
         city.name = "Granada"
         and: "that city name is already associated to another city"
-        cityGateway.obtainByName(_) >> new City(2, "Granada")
+        cityGateway.obtainByName(_) >> new City(2, "Granada", null)
 
         when: "the scenario executes"
         city = updateCity.execute(city)
@@ -75,7 +75,7 @@ class UpdateCitySpec extends Specification {
 
     def "Try update city not existent yet"() {
         given: "a non existent city with id 1 and name Zaragoza"
-        City city = new City(1L, "Zaragoza")
+        City city = new City(1L, "Zaragoza", null)
 
         when: "the scenario executes"
         city = updateCity.execute(city)
