@@ -1,4 +1,4 @@
-package br.com.cedran.city.gateway.assembler;
+package br.com.cedran.city.gateway.database.assembler;
 
 import br.com.cedran.city.gateway.database.mysql.entity.DestinationEntity;
 import br.com.cedran.city.model.Destination;

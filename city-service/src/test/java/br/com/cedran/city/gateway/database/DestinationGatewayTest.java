@@ -3,8 +3,6 @@ package br.com.cedran.city.gateway.database;
 import br.com.cedran.city.gateway.DestinationGateway;
 import br.com.cedran.city.model.City;
 import br.com.cedran.city.model.Destination;
-import org.hamcrest.CoreMatchers;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +22,7 @@ import static org.junit.Assert.assertThat;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @SpringBootTest
-@ComponentScan(basePackages = {"br.com.cedran.city.gateway.database", "br.com.cedran.city.gateway.assembler"})
+@ComponentScan(basePackages = {"br.com.cedran.city.gateway.database", "br.com.cedran.city.gateway.database.assembler"})
 @Sql(executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD, scripts = { "classpath:sql/city_gateway_test.sql"})
 public class DestinationGatewayTest {
 

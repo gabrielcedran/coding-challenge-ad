@@ -1,7 +1,7 @@
 package br.com.cedran.city.gateway.database;
 
 import br.com.cedran.city.gateway.DestinationGateway;
-import br.com.cedran.city.gateway.assembler.DestinationAssembler;
+import br.com.cedran.city.gateway.database.assembler.DestinationAssembler;
 import br.com.cedran.city.gateway.database.mysql.DestinationDatabaseRepository;
 import br.com.cedran.city.gateway.database.mysql.entity.DestinationEntity;
 import br.com.cedran.city.model.Destination;

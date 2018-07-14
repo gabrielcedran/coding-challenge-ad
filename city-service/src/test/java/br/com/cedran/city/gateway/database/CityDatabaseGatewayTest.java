@@ -21,7 +21,7 @@ import static org.junit.Assert.assertThat;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @SpringBootTest
-@ComponentScan(basePackages = {"br.com.cedran.city.gateway.database", "br.com.cedran.city.gateway.assembler"})
+@ComponentScan(basePackages = {"br.com.cedran.city.gateway.database", "br.com.cedran.city.gateway.database.assembler"})
 @Sql(executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD, scripts = { "classpath:sql/city_gateway_test.sql"})
 public class CityDatabaseGatewayTest {
 

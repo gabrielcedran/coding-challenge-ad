@@ -2,7 +2,6 @@ package br.com.cedran.city
 
 import br.com.cedran.city.gateway.CityGateway
 import br.com.cedran.city.model.City
-import br.com.cedran.city.usecase.CreateCity
 import br.com.cedran.city.usecase.UpdateCity
 import br.com.cedran.city.usecase.exceptions.BusinessException
 import spock.lang.Specification

@@ -1,8 +1,7 @@
-package br.com.cedran.city.gateway.assembler;
+package br.com.cedran.city.gateway.database.assembler;
 
 import br.com.cedran.city.gateway.database.mysql.entity.CityEntity;
 import br.com.cedran.city.model.City;
-import org.hibernate.Hibernate;
 
 public class CityAssembler {
 

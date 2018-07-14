@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-import static br.com.cedran.city.model.BusinessError.CITY_NAME_EXISTENT;
+import static br.com.cedran.city.model.ErrorCode.CITY_NAME_EXISTENT;
 
 @Service
 @AllArgsConstructor

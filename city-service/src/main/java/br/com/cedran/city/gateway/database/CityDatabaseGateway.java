@@ -1,7 +1,7 @@
 package br.com.cedran.city.gateway.database;
 
 import br.com.cedran.city.gateway.CityGateway;
-import br.com.cedran.city.gateway.assembler.CityAssembler;
+import br.com.cedran.city.gateway.database.assembler.CityAssembler;
 import br.com.cedran.city.gateway.database.mysql.CityDatabaseRepository;
 import br.com.cedran.city.gateway.database.mysql.entity.CityEntity;
 import br.com.cedran.city.model.City;

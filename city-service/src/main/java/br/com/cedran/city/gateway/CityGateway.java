@@ -2,8 +2,6 @@ package br.com.cedran.city.gateway;
 
 import br.com.cedran.city.model.City;
 
-import java.util.List;
-
 public interface CityGateway {
     City obtainByName(String name);
     City obtainById(Long id);
