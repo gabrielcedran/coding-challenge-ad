@@ -5,10 +5,8 @@ import br.com.cedran.route.gateway.web.feign.CityClient;
 import br.com.cedran.route.gateway.web.feign.assembler.CityAssembler;
 import br.com.cedran.route.model.City;
 import lombok.AllArgsConstructor;
-import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -17,10 +15,6 @@ import org.springframework.stereotype.Service;
 public class CityWebGateway implements CityGateway {
 
     private CityClient cityClient;
-
-    private CacheManager cacheManager;
-
-    private ApplicationContext appContext;
 
     @Override
     @Cacheable

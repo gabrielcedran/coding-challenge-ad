@@ -9,6 +9,7 @@ import br.com.cedran.route.usecase.CalculateFastestRoute;
 import br.com.cedran.route.usecase.CalculateShortestRoute;
 import br.com.cedran.route.usecase.ValidateOriginAndDestination;
 import br.com.cedran.route.usecase.exceptions.BusinessException;
+import br.com.cedran.route.usecase.exceptions.NotFoundException;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -54,6 +55,10 @@ public class RouteController {
                 throw (BusinessException) e.getCause();
             }
             throw new RuntimeException(e);
+        }
+
+        if (fastestRouteFound == null && shortestRouteFound == null) {
+            throw new NotFoundException();
         }
 
         return BestRoutesResponseDTO

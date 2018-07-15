@@ -3,12 +3,14 @@ package br.com.cedran.city.gateway.web.mvc;
 import br.com.cedran.city.gateway.web.mvc.dto.ErrorResponse;
 import br.com.cedran.city.model.ErrorCode;
 import br.com.cedran.city.usecase.exceptions.BusinessException;
+import br.com.cedran.city.usecase.exceptions.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
 import java.util.stream.Collectors;
@@ -48,5 +50,11 @@ public class GenericControllerAdvice {
         errorResponse.setErrorMessage(ErrorCode.INVALID_ARGUMENT.getMessage());
         errorResponse.setParams(exception.getBindingResult().getAllErrors().stream().map(error -> ((FieldError) error)).map(error -> String.format("%s %s", error.getField(), error.getDefaultMessage())).collect(Collectors.toList()));
         return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(NotFoundException.class)
+    @ResponseStatus(code = HttpStatus.NOT_FOUND)
+    public void notFound(final NotFoundException exception) {
+
     }
 }

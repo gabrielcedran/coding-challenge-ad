@@ -1,5 +1,6 @@
 package br.com.cedran.route;
 
+import br.com.cedran.route.gateway.web.feign.CustomErrorDecoder;
 import com.github.benmanes.caffeine.cache.CaffeineSpec;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -23,7 +24,7 @@ public class Application {
     @Value("${route-service.executor-service.shortestRouteCalculation.numberOfThreads:30}")
     private Integer executorServiceNoOfThread;
 
-    @Value("${spring.cache.caffeine.spec:expireAfterAccess=2s}")
+    @Value("${spring.cache.caffeine.spec:expireAfterWrite=2s}")
     private String caffeineSpec;
 
     @Bean
@@ -36,4 +37,8 @@ public class Application {
         return CaffeineSpec.parse(caffeineSpec);
     }
 
+    @Bean
+    public CustomErrorDecoder myErrorDecoder() {
+        return new CustomErrorDecoder();
+    }
 }
