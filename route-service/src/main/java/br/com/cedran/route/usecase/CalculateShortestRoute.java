@@ -9,14 +9,20 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.stream.Collectors;
 
 import static br.com.cedran.route.model.ErrorCode.ORIGIN_AND_DESTINATION_THE_SAME;
+import static java.util.stream.Collectors.toList;
 
 @Service
 @AllArgsConstructor
 public class CalculateShortestRoute {
 
     private CityGateway cityGateway;
+
+    private ExecutorService shortestRouteCalculationExecutorService;
 
     public List<City> execute(Long originCityId, Long destinationCityId) {
 
@@ -59,27 +65,38 @@ public class CalculateShortestRoute {
                 break;
             }
 
-            Pair<City, List<City>> nextProcessingCity = citiesToBeProcessed.remove(0);
-            City processingCity = cityGateway.obtainWithDestinationsById(nextProcessingCity.getLeft().getId());
+            // Always process all the
+            List<CompletableFuture<Pair<City, List<City>>>> processingCitiesCF = citiesToBeProcessed.stream()
+                    .map(cityToBeProcessed -> CompletableFuture.supplyAsync(() -> Pair.of(cityGateway.obtainWithDestinationsById(cityToBeProcessed.getLeft().getId()), cityToBeProcessed.getRight()),
+                            shortestRouteCalculationExecutorService)).collect(Collectors.toList());
+            citiesToBeProcessed.clear();
 
-            processedCity.add(processingCity.getId());
+            CompletableFuture<Void> allCFDone = CompletableFuture.allOf(processingCitiesCF.toArray(new CompletableFuture[processingCitiesCF.size()]));
+            List<Pair<City, List<City>>> processingCities = allCFDone.thenApply(v -> processingCitiesCF.stream().map(CompletableFuture::join).collect(toList())).join();
 
-            processingCity.getDestinations().stream().forEach(destination -> {
-                List<City> route = new ArrayList<>(nextProcessingCity.getRight());
-                route.add(destination.getCity());
+            processingCities.forEach(processingPair -> {
+                City processingCity = processingPair.getLeft();
+                processedCity.add(processingCity.getId());
 
-                routesFound.putIfAbsent(destination.getCity().getId(), route);
+                processingCity.getDestinations().stream().forEach(destination -> {
+                    List<City> route = new ArrayList<>(processingPair.getRight());
+                    route.add(destination.getCity());
 
-                if (addCityToListToBeProcessed(processedCity, citiesToBeProcessed, destination)) {
-                    citiesToBeProcessed.add(Pair.of(destination.getCity(), route));
-                }
+                    routesFound.putIfAbsent(destination.getCity().getId(), route);
+
+                    if (addCityToListToBeProcessed(processedCity, citiesToBeProcessed, processingCities, destination)) {
+                        citiesToBeProcessed.add(Pair.of(destination.getCity(), route));
+                    }
+                });
             });
 
         }
     }
 
-    private boolean addCityToListToBeProcessed(List<Long> processedCity, List<Pair<City, List<City>>> citiesToBeProcessed, Destination destination) {
+    private boolean addCityToListToBeProcessed(List<Long> processedCity, List<Pair<City, List<City>>> citiesToBeProcessed, List<Pair<City, List<City>>> processingCities, Destination destination) {
+        // Consider eligible to be processed the ones that has not been processed yet, are not in the list to be processed and are not in the current processing pipeline
         return !processedCity.contains(destination.getCity().getId()) &&
-                citiesToBeProcessed.stream().noneMatch(cityToBeProcessed -> cityToBeProcessed.getLeft().getId().equals(destination.getCity().getId()));
+                citiesToBeProcessed.stream().noneMatch(cityToBeProcessed -> cityToBeProcessed.getLeft().getId().equals(destination.getCity().getId())) &&
+                processingCities.stream().noneMatch(cityToBeProcessed -> cityToBeProcessed.getLeft().getId().equals(destination.getCity().getId()));
     }
 }

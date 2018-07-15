@@ -5,18 +5,20 @@ import br.com.cedran.route.model.City
 import br.com.cedran.route.model.Destination
 import spock.lang.Specification
 
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
+
 import static java.time.Duration.ofHours
 
 class CalculateShortestRouteSpec extends Specification {
 
     CalculateShortestRoute calculateShortestRoute
     CityGateway cityGateway = Mock()
+    ExecutorService executorService = Executors.newFixedThreadPool(4)
 
     def setup() {
-        calculateShortestRoute = new CalculateShortestRoute(cityGateway)
+        calculateShortestRoute = new CalculateShortestRoute(cityGateway, executorService)
     }
-
-
 
     /**
      * City 1: City 2 - 2 | City 3 - 3 | City 4 - 1 | City 5 - 1
@@ -115,13 +117,13 @@ class CalculateShortestRouteSpec extends Specification {
         and: "the city gateway is called 1 time for city 7"
         1 * cityGateway.obtainWithDestinationsById(7) >> city7
         and: "the city gateway is not called for city 8"
-        0 * cityGateway.obtainWithDestinationsById(8) >> city8
+        1 * cityGateway.obtainWithDestinationsById(8) >> city8
         and: "the city gateway is not called for city 9"
         0 * cityGateway.obtainWithDestinationsById(9) >> city9
         and: "the city gateway is not called for city 10"
         0 * cityGateway.obtainWithDestinationsById(10) >> city10
         and: "the city gateway is not called for city 11"
-        0 * cityGateway.obtainWithDestinationsById(11) >> city11
+        1 * cityGateway.obtainWithDestinationsById(11) >> city11
         and: "the city gateway is not called for city 12"
         0 * cityGateway.obtainWithDestinationsById(12) >> city12
         and: "the city gateway is called 1 time for city 13"

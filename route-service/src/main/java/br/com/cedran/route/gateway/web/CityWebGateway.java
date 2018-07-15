@@ -19,4 +19,5 @@ public class CityWebGateway implements CityGateway {
     public City obtainWithDestinationsById(Long cityId) {
         return CityAssembler.fromCityDTO(cityClient.byIdWithDestinations(cityId));
     }
+
 }
