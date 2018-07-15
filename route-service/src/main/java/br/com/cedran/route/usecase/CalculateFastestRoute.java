@@ -3,7 +3,6 @@ package br.com.cedran.route.usecase;
 import br.com.cedran.route.gateway.CityGateway;
 import br.com.cedran.route.model.City;
 import br.com.cedran.route.model.Destination;
-import br.com.cedran.route.model.ErrorCode;
 import br.com.cedran.route.usecase.exceptions.BusinessException;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.tuple.Pair;

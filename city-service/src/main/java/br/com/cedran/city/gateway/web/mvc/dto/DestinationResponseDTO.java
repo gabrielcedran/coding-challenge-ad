@@ -7,7 +7,6 @@ import lombok.Setter;
 @Setter
 public class DestinationResponseDTO {
     private Long id;
-    //private CityResponseDTO originCity;
     private CityResponseDTO city;
     private Long journeyTimeInMinutes;
 }

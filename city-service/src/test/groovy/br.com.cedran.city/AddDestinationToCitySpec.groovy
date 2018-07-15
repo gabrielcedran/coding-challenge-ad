@@ -4,7 +4,6 @@ import br.com.cedran.city.gateway.CityGateway
 import br.com.cedran.city.gateway.DestinationGateway
 import br.com.cedran.city.model.City
 import br.com.cedran.city.model.Destination
-import br.com.cedran.city.model.ErrorCode
 import br.com.cedran.city.usecase.AddDestinationToCity
 import br.com.cedran.city.usecase.exceptions.BusinessException
 import spock.lang.Specification

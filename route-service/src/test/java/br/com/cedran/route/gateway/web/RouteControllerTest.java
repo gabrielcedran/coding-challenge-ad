@@ -1,9 +1,6 @@
 package br.com.cedran.route.gateway.web;
 
-import br.com.cedran.route.gateway.web.feign.dto.CityDTO;
-import br.com.cedran.route.gateway.web.mvc.dto.CityResponseDTO;
 import br.com.cedran.route.model.City;
-import br.com.cedran.route.model.ErrorCode;
 import br.com.cedran.route.usecase.CalculateFastestRoute;
 import br.com.cedran.route.usecase.exceptions.BusinessException;
 import org.apache.commons.lang3.tuple.Pair;
