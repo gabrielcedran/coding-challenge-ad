@@ -65,15 +65,17 @@ public class CalculateShortestRoute {
                 break;
             }
 
-            // Always process all the
+            // Always process all the cities waiting to be processed in parallel until the destination is found to earn time
             List<CompletableFuture<Pair<City, List<City>>>> processingCitiesCF = citiesToBeProcessed.stream()
                     .map(cityToBeProcessed -> CompletableFuture.supplyAsync(() -> Pair.of(cityGateway.obtainWithDestinationsById(cityToBeProcessed.getLeft().getId()), cityToBeProcessed.getRight()),
                             shortestRouteCalculationExecutorService)).collect(Collectors.toList());
             citiesToBeProcessed.clear();
 
+            // Wait all to complete
             CompletableFuture<Void> allCFDone = CompletableFuture.allOf(processingCitiesCF.toArray(new CompletableFuture[processingCitiesCF.size()]));
             List<Pair<City, List<City>>> processingCities = allCFDone.thenApply(v -> processingCitiesCF.stream().map(CompletableFuture::join).collect(toList())).join();
 
+            // Update the processed list and verify which vertexes must be included in the list of the cities to be processed
             processingCities.forEach(processingPair -> {
                 City processingCity = processingPair.getLeft();
                 processedCity.add(processingCity.getId());

@@ -6,3 +6,5 @@ cityApi:
   ribbon:
     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
     listOfServers: localhost:9000
+
+spring.cache.caffeine.spec: expireAfterAccess=1s

@@ -140,4 +140,18 @@ public class CityGatewayTest {
         // AND the remote server is called only once
         WireMock.verify(1, getRequestedFor(WireMock.urlEqualTo("/v1/city/1")));
     }
+
+    @Test
+    public void test_cache_expires() throws InterruptedException {
+        // GIVEN the zaragoza id
+        Long zaragozaId = 1L;
+        City zaragoza = cityGateway.obtainWithDestinationsById(zaragozaId);
+
+        // WHEN 2 seconds passes and the service is called again
+        Thread.sleep(1000);
+        zaragoza = cityGateway.obtainWithDestinationsById(zaragozaId);
+
+        // AND the remote server is called two times
+        WireMock.verify(2, getRequestedFor(WireMock.urlEqualTo("/v1/city/1")));
+    }
 }
