@@ -1,0 +1,8 @@
+ribbon:
+  eureka:
+    enabled: false
+
+cityApi:
+  ribbon:
+    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+    listOfServers: localhost:8080

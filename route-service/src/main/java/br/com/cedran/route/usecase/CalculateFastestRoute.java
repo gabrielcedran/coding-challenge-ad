@@ -11,7 +11,7 @@ import java.util.*;
 
 @Service
 @AllArgsConstructor
-public class CalculateShortestRoute {
+public class CalculateFastestRoute {
 
     private CityGateway cityGateway;
 
@@ -37,7 +37,7 @@ public class CalculateShortestRoute {
     }
 
     private void setupFirstDestinations(Long originCityId, List<Long> processedCities, Map<Long, Pair<Long, List<Long>>> definedDistances, TreeSet<Pair<Long, Long>> citiesToBeProcessed) {
-        City originCity = cityGateway.obtainById(originCityId);
+        City originCity = cityGateway.obtainWithDestinationsById(originCityId);
         definedDistances.putIfAbsent(originCity.getId(), Pair.of(0L, Collections.emptyList()));
         processedCities.add(originCity.getId());
 
@@ -59,7 +59,7 @@ public class CalculateShortestRoute {
             }
 
             Pair<Long, Long> processingCity = citiesToBeProcessed.pollFirst();
-            City city = cityGateway.obtainById(processingCity.getLeft());
+            City city = cityGateway.obtainWithDestinationsById(processingCity.getLeft());
 
             processedCities.add(city.getId());
 

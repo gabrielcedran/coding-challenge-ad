@@ -1,12 +1,9 @@
 package br.com.cedran.city.gateway.web;
 
-import br.com.cedran.city.gateway.web.dtos.CityRequestDTO;
-import br.com.cedran.city.gateway.web.dtos.DestinationRequestDTO;
+import br.com.cedran.city.gateway.web.mvc.dto.DestinationRequestDTO;
 import br.com.cedran.city.model.City;
 import br.com.cedran.city.model.Destination;
-import br.com.cedran.city.model.ErrorCode;
 import br.com.cedran.city.usecase.*;
-import br.com.cedran.city.usecase.exceptions.BusinessException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -19,7 +16,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.Duration;
-import java.util.Arrays;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -62,11 +58,9 @@ public class DestinationControllerTest {
         .then()
             .statusCode(HttpStatus.CREATED.value())
             .body("id", equalTo(100))
-                .body("originCity.id", equalTo(1))
-                .body("originCity.name", equalTo("Zaragoza"))
-                .body("destinationCity.id", equalTo(2))
-                .body("destinationCity.name", equalTo("Granada"))
-                .body("journeyTimeInMinutes", equalTo(90))
+            .body("city.id", equalTo(2))
+            .body("city.name", equalTo("Granada"))
+            .body("journeyTimeInMinutes", equalTo(90))
         ;
 
     }

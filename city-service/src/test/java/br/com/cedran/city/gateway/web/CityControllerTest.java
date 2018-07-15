@@ -1,6 +1,6 @@
 package br.com.cedran.city.gateway.web;
 
-import br.com.cedran.city.gateway.web.dtos.CityRequestDTO;
+import br.com.cedran.city.gateway.web.mvc.dto.CityRequestDTO;
 import br.com.cedran.city.model.City;
 import br.com.cedran.city.model.Destination;
 import br.com.cedran.city.model.ErrorCode;
@@ -8,16 +8,12 @@ import br.com.cedran.city.usecase.CreateCity;
 import br.com.cedran.city.usecase.ObtainCityWithDestinations;
 import br.com.cedran.city.usecase.UpdateCity;
 import br.com.cedran.city.usecase.exceptions.BusinessException;
-import io.restassured.http.ContentType;
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -32,7 +28,6 @@ import static org.hamcrest.Matchers.containsInAnyOrder;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@Configuration
 public class CityControllerTest {
 
     @MockBean
@@ -69,20 +64,14 @@ public class CityControllerTest {
             .body("name", equalTo("Zaragoza") )
             .body("destinations.size()", equalTo(2))
             .root("destinations.find {it.id == 10}")
-            .body("originCity.id", equalTo(1))
-            .body("originCity.name", equalTo("Zaragoza"))
-            .body("originCity.destinations", nullValue())
-            .body("destinationCity.id", equalTo(2))
-            .body("destinationCity.name", equalTo("Granada"))
-            .body("destinationCity.destinations", nullValue())
+            .body("city.id", equalTo(2))
+            .body("city.name", equalTo("Granada"))
+            .body("city.destinations", nullValue())
             .body("journeyTimeInMinutes", equalTo(60))
             .root("destinations.find {it.id == 11}")
-            .body("originCity.id", equalTo(1))
-            .body("originCity.name", equalTo("Zaragoza"))
-            .body("originCity.destinations", nullValue())
-            .body("destinationCity.id", equalTo(3))
-            .body("destinationCity.name", equalTo("Madrid"))
-            .body("destinationCity.destinations", nullValue())
+            .body("city.id", equalTo(3))
+            .body("city.name", equalTo("Madrid"))
+            .body("city.destinations", nullValue())
             .body("journeyTimeInMinutes", equalTo(120))
             ;
 

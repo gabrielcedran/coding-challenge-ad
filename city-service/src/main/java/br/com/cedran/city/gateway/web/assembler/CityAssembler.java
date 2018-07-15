@@ -1,7 +1,7 @@
 package br.com.cedran.city.gateway.web.assembler;
 
-import br.com.cedran.city.gateway.web.dtos.CityRequestDTO;
-import br.com.cedran.city.gateway.web.dtos.CityResponseDTO;
+import br.com.cedran.city.gateway.web.mvc.dto.CityRequestDTO;
+import br.com.cedran.city.gateway.web.mvc.dto.CityResponseDTO;
 import br.com.cedran.city.model.City;
 
 public class CityAssembler {

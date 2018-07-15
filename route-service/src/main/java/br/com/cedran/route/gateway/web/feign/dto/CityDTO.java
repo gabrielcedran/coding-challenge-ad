@@ -1,4 +1,4 @@
-package br.com.cedran.city.gateway.web.dtos;
+package br.com.cedran.route.gateway.web.feign.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,10 +7,10 @@ import java.util.List;
 
 @Getter
 @Setter
-public class CityResponseDTO {
+public class CityDTO {
 
     private Long id;
     private String name;
-    private List<DestinationResponseDTO> destinations;
+    private List<DestinationDTO> destinations;
 
 }

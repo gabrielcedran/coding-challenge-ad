@@ -1,6 +1,6 @@
-package br.com.cedran.city.gateway.web;
+package br.com.cedran.city.gateway.web.mvc;
 
-import br.com.cedran.city.gateway.web.dtos.ErrorResponse;
+import br.com.cedran.city.gateway.web.mvc.dto.ErrorResponse;
 import br.com.cedran.city.model.ErrorCode;
 import br.com.cedran.city.usecase.exceptions.BusinessException;
 import org.springframework.http.HttpStatus;

@@ -1,4 +1,4 @@
-package br.com.cedran.city.gateway.web.dtos;
+package br.com.cedran.city.gateway.web.mvc.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public class DestinationResponseDTO {
     private Long id;
-    private CityResponseDTO originCity;
-    private CityResponseDTO destinationCity;
+    //private CityResponseDTO originCity;
+    private CityResponseDTO city;
     private Long journeyTimeInMinutes;
 }

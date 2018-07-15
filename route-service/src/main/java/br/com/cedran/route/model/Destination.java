@@ -13,7 +13,9 @@ import java.time.Duration;
 @NoArgsConstructor
 public class Destination {
 
+    private Long id;
     private Long cityId;
+    private String name;
     private Duration journeyTime;
 
 }

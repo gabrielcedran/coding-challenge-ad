@@ -1,8 +1,8 @@
-package br.com.cedran.city.gateway.web;
+package br.com.cedran.city.gateway.web.mvc;
 
 import br.com.cedran.city.gateway.web.assembler.CityAssembler;
-import br.com.cedran.city.gateway.web.dtos.CityRequestDTO;
-import br.com.cedran.city.gateway.web.dtos.CityResponseDTO;
+import br.com.cedran.city.gateway.web.mvc.dto.CityRequestDTO;
+import br.com.cedran.city.gateway.web.mvc.dto.CityResponseDTO;
 import br.com.cedran.city.usecase.CreateCity;
 import br.com.cedran.city.usecase.ObtainCityWithDestinations;
 import br.com.cedran.city.usecase.UpdateCity;

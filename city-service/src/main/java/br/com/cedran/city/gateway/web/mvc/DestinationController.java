@@ -1,8 +1,8 @@
-package br.com.cedran.city.gateway.web;
+package br.com.cedran.city.gateway.web.mvc;
 
 import br.com.cedran.city.gateway.web.assembler.DestinationAssembler;
-import br.com.cedran.city.gateway.web.dtos.DestinationRequestDTO;
-import br.com.cedran.city.gateway.web.dtos.DestinationResponseDTO;
+import br.com.cedran.city.gateway.web.mvc.dto.DestinationRequestDTO;
+import br.com.cedran.city.gateway.web.mvc.dto.DestinationResponseDTO;
 import br.com.cedran.city.usecase.*;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

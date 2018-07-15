@@ -1,4 +1,4 @@
-package br.com.cedran.city.gateway.web.dtos;
+package br.com.cedran.city.gateway.web.mvc.dto;
 
 import lombok.Getter;
 import lombok.Setter;
