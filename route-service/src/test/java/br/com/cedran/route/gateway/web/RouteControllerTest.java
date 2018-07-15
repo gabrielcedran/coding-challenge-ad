@@ -2,6 +2,7 @@ package br.com.cedran.route.gateway.web;
 
 import br.com.cedran.route.model.City;
 import br.com.cedran.route.usecase.CalculateFastestRoute;
+import br.com.cedran.route.usecase.CalculateShortestRoute;
 import br.com.cedran.route.usecase.exceptions.BusinessException;
 import org.apache.commons.lang3.tuple.Pair;
 import org.junit.Test;
@@ -33,8 +34,11 @@ public class RouteControllerTest {
     @MockBean
     private CalculateFastestRoute calculateFastestRoute;
 
+    @MockBean
+    private CalculateShortestRoute calculateShortestRoute;
+
     @Test
-    public void test_find_fastest_route_successfully() {
+    public void test_find_fastest_and_shortest_route_successfully() {
 
         City granada = new City(2L, "Granada", null);
         City malaga = new City(4L, "Malaga", null);
@@ -43,6 +47,9 @@ public class RouteControllerTest {
         Pair<Duration, List<City>> fastestRoute = Pair.of(Duration.ofMinutes(150), Arrays.asList(granada, malaga, madrid));
 
         Mockito.when(calculateFastestRoute.execute(1L, 5L)).thenReturn(fastestRoute);
+
+        List<City> shortestRoute = Arrays.asList(granada, madrid);
+        Mockito.when(calculateShortestRoute.execute(1L, 5L)).thenReturn(shortestRoute);
 
         given()
             .pathParam("originCityId", "1")
@@ -54,6 +61,9 @@ public class RouteControllerTest {
             .body("fastest.cities.id", contains(2, 4, 5))
             .body("fastest.cities.name", contains("Granada", "Malaga", "Madrid"))
             .body("fastest.journeyTimeInMinutes", equalTo(150))
+            .body("shortest.cities.id", contains(2, 5))
+            .body("shortest.cities.name", contains("Granada", "Madrid"))
+            .body("shortest.numberOfStops", equalTo(2))
         ;
     }
 
@@ -97,6 +107,8 @@ public class RouteControllerTest {
 
         Mockito.when(calculateFastestRoute.execute(1L, 5L)).thenReturn(null);
 
+        Mockito.when(calculateShortestRoute.execute(1L, 5L)).thenReturn(null);
+
         given()
             .pathParam("originCityId", "1")
             .pathParam("destinationCityId", "5")
@@ -105,6 +117,7 @@ public class RouteControllerTest {
         .then()
             .statusCode(HttpStatus.OK.value())
             .body("fastest", nullValue())
+            .body("shortest", nullValue())
         ;
     }
 }

@@ -11,7 +11,7 @@ import java.util.List;
 @Builder
 public class ShortestRouteResponseDTO {
 
-    private List<String> cities;
-    private Long numberOfStops;
+    private List<CityResponseDTO> cities;
+    private Integer numberOfStops;
 
 }
