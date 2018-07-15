@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.Duration;
 import java.util.*;
+import java.util.concurrent.CompletableFuture;
 
 import static br.com.cedran.route.model.ErrorCode.ORIGIN_AND_DESTINATION_THE_SAME;
 
@@ -19,9 +20,9 @@ public class CalculateFastestRoute {
 
     private CityGateway cityGateway;
 
-    public Pair<Duration, List<City>> execute(Long originCity, Long destinationCity) {
+    public Pair<Duration, List<City>> execute(Long originCityId, Long destinationCityId) {
 
-        if (originCity.equals(destinationCity)) {
+        if (originCityId.equals(destinationCityId)) {
             throw new BusinessException(ORIGIN_AND_DESTINATION_THE_SAME);
         }
 
@@ -35,11 +36,11 @@ public class CalculateFastestRoute {
         // right: time
         TreeSet<Pair<City, Duration>> citiesToBeProcessed = new TreeSet<>((city1, city2) -> city1.getRight().equals(city2.getRight()) ? city1.getLeft().getId().compareTo(city2.getLeft().getId()) : city1.getRight().compareTo(city2.getRight()));
 
-        setupFirstDestinations(originCity, processedCities, definedDistances, citiesToBeProcessed);
+        setupFirstDestinations(originCityId, processedCities, definedDistances, citiesToBeProcessed);
 
-        processFastestRoute(processedCities, definedDistances, citiesToBeProcessed, destinationCity);
+        processFastestRoute(processedCities, definedDistances, citiesToBeProcessed, destinationCityId);
 
-        return definedDistances.get(destinationCity);
+        return definedDistances.get(destinationCityId);
 
     }
 

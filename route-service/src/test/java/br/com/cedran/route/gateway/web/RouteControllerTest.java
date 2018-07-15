@@ -3,6 +3,7 @@ package br.com.cedran.route.gateway.web;
 import br.com.cedran.route.model.City;
 import br.com.cedran.route.usecase.CalculateFastestRoute;
 import br.com.cedran.route.usecase.CalculateShortestRoute;
+import br.com.cedran.route.usecase.ValidateOriginAndDestination;
 import br.com.cedran.route.usecase.exceptions.BusinessException;
 import org.apache.commons.lang3.tuple.Pair;
 import org.junit.Test;
@@ -36,6 +37,9 @@ public class RouteControllerTest {
 
     @MockBean
     private CalculateShortestRoute calculateShortestRoute;
+
+    @MockBean
+    private ValidateOriginAndDestination validateOriginAndDestination;
 
     @Test
     public void test_find_fastest_and_shortest_route_successfully() {
