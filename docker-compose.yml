@@ -1,0 +1,33 @@
+version: '2'
+services:
+  city-service:
+    container_name: city-service
+    build:
+      context: .
+      dockerfile: Dockerfile.city
+    image: city-service:latest
+    expose:
+      - 8080
+    ports:
+      - 8080:8080
+    networks:
+      - spring-network
+  route-service:
+    container_name: route-service
+    build:
+      context: .
+      dockerfile: Dockerfile.route
+    image: route-service:latest
+    expose:
+      - 8081
+    ports:
+      - 8081:8081
+    networks:
+      - spring-network
+    links:
+      - city-service:city-service
+    depends_on:
+      - city-service
+networks:
+  spring-network:
+    driver: bridge

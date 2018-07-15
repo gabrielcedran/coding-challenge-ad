@@ -1,0 +1,6 @@
+FROM alpine-java:base
+MAINTAINER baeldung.com
+COPY route-service/target/route-service-0.1.0.jar /opt/route-service/lib/
+ENTRYPOINT ["/usr/bin/java"]
+CMD ["-jar", "/opt/route-service/lib/route-service-0.1.0.jar", "--cityApi.ribbon.listOfServers=city-service:8080"]
+EXPOSE 8081

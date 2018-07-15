@@ -119,9 +119,7 @@ public class RouteControllerTest {
         .when()
             .get(serverUrl+"/{originCityId}/{destinationCityId}")
         .then()
-            .statusCode(HttpStatus.OK.value())
-            .body("fastest", nullValue())
-            .body("shortest", nullValue())
+            .statusCode(HttpStatus.NOT_FOUND.value())
         ;
     }
 }

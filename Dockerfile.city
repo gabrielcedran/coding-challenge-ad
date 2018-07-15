@@ -1,0 +1,6 @@
+FROM alpine-java:base
+MAINTAINER baeldung.com
+COPY city-service/target/city-service-0.1.0.jar /opt/city-service/lib/
+ENTRYPOINT ["/usr/bin/java"]
+CMD ["-jar", "/opt/city-service/lib/city-service-0.1.0.jar"]
+EXPOSE 8080
