@@ -21,6 +21,7 @@ import java.util.Arrays;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
 import static com.github.tomakehurst.wiremock.client.WireMock.get;
+import static com.github.tomakehurst.wiremock.client.WireMock.getRequestedFor;
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
@@ -103,5 +104,38 @@ public class CityGatewayTest {
         assertThat(destination.getCity().getId(), equalTo(3L));
         assertThat(destination.getCity().getName(), equalTo("Madrid"));
         assertThat(destination.getJourneyTime(), equalTo(Duration.ofMinutes(90)));
+    }
+
+    @Test
+    public void test_cache() {
+        // GIVEN the zaragoza id
+        Long zaragozaId = 1L;
+
+        // WHEN it is retrieved tree times
+        City zaragoza = cityGateway.obtainWithDestinationsById(zaragozaId);
+        zaragoza = cityGateway.obtainWithDestinationsById(zaragozaId);
+        zaragoza = cityGateway.obtainWithDestinationsById(zaragozaId);
+
+        /// THEN a city model with Zaragoza's data is returned
+        assertThat(zaragoza, notNullValue());
+        assertThat(zaragoza.getId(), equalTo(1L));
+        assertThat(zaragoza.getName(), equalTo("Zaragoza"));
+        // AND it has two destinations
+        assertThat(zaragoza.getDestinations().size(), equalTo(2));
+        // AND the first destination is Granada
+        Destination destination = zaragoza.getDestinations().get(0);
+        assertThat(destination.getId(), equalTo(100L));
+        assertThat(destination.getCity().getId(), equalTo(2L));
+        assertThat(destination.getCity().getName(), equalTo("Granada"));
+        assertThat(destination.getJourneyTime(), equalTo(Duration.ofMinutes(60)));
+        // AND the second destination is Madrid
+        destination = zaragoza.getDestinations().get(1);
+        assertThat(destination.getId(), equalTo(101L));
+        assertThat(destination.getCity().getId(), equalTo(3L));
+        assertThat(destination.getCity().getName(), equalTo("Madrid"));
+        assertThat(destination.getJourneyTime(), equalTo(Duration.ofMinutes(90)));
+
+        // AND the remote server is called only once
+        WireMock.verify(1, getRequestedFor(WireMock.urlEqualTo("/v1/city/1")));
     }
 }
