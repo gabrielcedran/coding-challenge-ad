@@ -1,4 +1,4 @@
-package br.com.cedran.city.model;
+package br.com.cedran.route.model;
 
 import lombok.Getter;
 
@@ -12,8 +12,7 @@ public enum ErrorCode {
     DESTINATION_NOT_EXISTENT("BE00005", "Destination non existent"),
     UNEXPECTED_ERROR("GE00001", "Unexpected error"),
     INVALID_ARGUMENT("BE00006", "Invalid argument"),
-    ORIGIN_AND_DESTINATION_THE_SAME("BE00007", "The origin and destination are the same"),
-    JOURNEY_TIME_INVALID("BE00008", "The journey time should be greater than 0");
+    ORIGIN_AND_DESTINATION_THE_SAME("BE00007", "The origin and destination are the same");
 
     private String errorCode;
     private String message;

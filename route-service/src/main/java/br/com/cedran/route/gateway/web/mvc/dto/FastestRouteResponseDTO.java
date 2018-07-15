@@ -11,7 +11,7 @@ import java.util.List;
 @Builder
 public class FastestRouteResponseDTO {
 
-    private List<String> cities;
+    private List<CityResponseDTO> cities;
     private Long journeyTimeInMinutes;
 
 }

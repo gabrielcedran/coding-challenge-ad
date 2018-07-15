@@ -94,14 +94,14 @@ public class CityGatewayTest {
         // AND the first destination is Granada
         Destination destination = zaragoza.getDestinations().get(0);
         assertThat(destination.getId(), equalTo(100L));
-        assertThat(destination.getCityId(), equalTo(2L));
-        assertThat(destination.getName(), equalTo("Granada"));
+        assertThat(destination.getCity().getId(), equalTo(2L));
+        assertThat(destination.getCity().getName(), equalTo("Granada"));
         assertThat(destination.getJourneyTime(), equalTo(Duration.ofMinutes(60)));
         // AND the second destination is Madrid
         destination = zaragoza.getDestinations().get(1);
         assertThat(destination.getId(), equalTo(101L));
-        assertThat(destination.getCityId(), equalTo(3L));
-        assertThat(destination.getName(), equalTo("Madrid"));
+        assertThat(destination.getCity().getId(), equalTo(3L));
+        assertThat(destination.getCity().getName(), equalTo("Madrid"));
         assertThat(destination.getJourneyTime(), equalTo(Duration.ofMinutes(90)));
     }
 }

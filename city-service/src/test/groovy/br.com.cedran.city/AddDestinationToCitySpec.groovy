@@ -4,6 +4,7 @@ import br.com.cedran.city.gateway.CityGateway
 import br.com.cedran.city.gateway.DestinationGateway
 import br.com.cedran.city.model.City
 import br.com.cedran.city.model.Destination
+import br.com.cedran.city.model.ErrorCode
 import br.com.cedran.city.usecase.AddDestinationToCity
 import br.com.cedran.city.usecase.exceptions.BusinessException
 import spock.lang.Specification
@@ -12,6 +13,8 @@ import java.time.Duration
 
 import static br.com.cedran.city.model.ErrorCode.CITY_NOT_EXISTENT
 import static br.com.cedran.city.model.ErrorCode.DESTINATION_EXISTENT
+import static br.com.cedran.city.model.ErrorCode.JOURNEY_TIME_INVALID
+import static br.com.cedran.city.model.ErrorCode.ORIGIN_AND_DESTINATION_THE_SAME
 
 class AddDestinationToCitySpec extends Specification {
 
@@ -112,5 +115,37 @@ class AddDestinationToCitySpec extends Specification {
         be.errorCode == DESTINATION_EXISTENT.errorCode
         and: "create method of the destination gateway is not called"
         0 * destinationGateway.create(_)
+    }
+
+    def "Test origin and destination the same" () {
+        given: "the origin id 1"
+        Long originId = 1
+        and: "the destination id 1"
+        Long destinationId = 1
+
+        when: "the fastest between city 5 and city 12 is calculated"
+        addDestinationToCity.execute(originId, destinationId, Duration.ofMinutes(100))
+
+        then: "a business exception is raised"
+        BusinessException be = thrown(BusinessException)
+        be.errorCode == ORIGIN_AND_DESTINATION_THE_SAME.errorCode
+        be.message == ORIGIN_AND_DESTINATION_THE_SAME.message
+
+    }
+
+    def "Test add destination with journey time as zero" () {
+        given: "the origin id 1"
+        Long originId = 1
+        and: "the destination id 2"
+        Long destinationId = 2
+
+        when: "the fastest between city 5 and city 12 is calculated"
+        addDestinationToCity.execute(originId, destinationId, Duration.ofMinutes(0))
+
+        then: "a business exception is raised"
+        BusinessException be = thrown(BusinessException)
+        be.errorCode == JOURNEY_TIME_INVALID.errorCode
+        be.message == JOURNEY_TIME_INVALID.message
+
     }
 }

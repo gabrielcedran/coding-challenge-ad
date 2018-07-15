@@ -9,8 +9,8 @@ import lombok.Setter;
 @Builder
 public class BestRoutesResponseDTO {
 
-    private FastestRouteResponseDTO fastestRouteResponseDTO;
+    private FastestRouteResponseDTO fastest;
 
-    private ShortestRouteResponseDTO shortestRouteResponseDTO;
+    private ShortestRouteResponseDTO shortest;
 
 }

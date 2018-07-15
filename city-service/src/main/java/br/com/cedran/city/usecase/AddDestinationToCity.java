@@ -12,8 +12,7 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.Optional;
 
-import static br.com.cedran.city.model.ErrorCode.CITY_NOT_EXISTENT;
-import static br.com.cedran.city.model.ErrorCode.DESTINATION_EXISTENT;
+import static br.com.cedran.city.model.ErrorCode.*;
 
 @AllArgsConstructor
 @Service
@@ -24,6 +23,12 @@ public class AddDestinationToCity {
     private CityGateway cityGateway;
 
     public Destination execute(Long originCityId, Long destinationCityId, Duration journeyTime) {
+
+        if (originCityId.equals(destinationCityId)) {
+            throw new BusinessException(ORIGIN_AND_DESTINATION_THE_SAME);
+        }
+
+        Optional.ofNullable(journeyTime).filter(time -> time.toMinutes() > 0).orElseThrow(() -> new BusinessException(JOURNEY_TIME_INVALID));
 
         City originCity = Optional.ofNullable(cityGateway.obtainById(originCityId)).orElseThrow(() -> new BusinessException(CITY_NOT_EXISTENT));
         if (Optional.ofNullable(originCity.getDestinations()).orElse(Collections.emptyList()).stream().anyMatch(destinationCity -> destinationCity.getDestinationCity().getId().equals(destinationCityId))) {

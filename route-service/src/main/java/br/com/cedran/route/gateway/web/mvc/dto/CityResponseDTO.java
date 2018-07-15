@@ -1,20 +1,17 @@
-package br.com.cedran.route.model;
+package br.com.cedran.route.gateway.web.mvc.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.Duration;
-
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Destination {
+public class CityResponseDTO {
 
     private Long id;
-    private City city;
-    private Duration journeyTime;
+    private String name;
 
 }
