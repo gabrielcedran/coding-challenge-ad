@@ -11,7 +11,7 @@ public class CustomErrorDecoder implements ErrorDecoder {
     @Override
     public Exception decode(String methodKey, Response response) {
         if (response.status() == 404) {
-            new NotFoundException();
+            throw new NotFoundException();
         }
         return defaultErrorDecoder.decode(methodKey, response);
     }

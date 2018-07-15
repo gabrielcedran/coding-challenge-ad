@@ -17,3 +17,33 @@ This project tries to follow [the clean architecture](https://8thlight.com/blog/
 1. Models
 2. Use Cases
 3. Gateways
+
+## Swagger
+Both services expose its api through swagger on the urls:
+http://localhost:8080/swagger-ui.html and http://localhost:8081/swagger-ui.html
+Due to lack of time, it was not possible to document the endpoints properly
+
+## Frameworks / Libraries
+### City Service:
+1. Spring boot
+2. Spring data
+3. Swagger
+4. Logback
+5. Spock
+6. Lombok
+7. JUNIT
+8. Rest Asssured
+9. H2
+
+
+### Route Service:
+1. Spring boot
+2. Spring data
+3. Feign
+4. Swagger
+5. Logback
+6. Spock
+7. Lombok
+8. JUNIT
+9. Rest Asssured
+10. Wire Mock

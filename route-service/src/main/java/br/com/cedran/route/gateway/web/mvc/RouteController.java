@@ -40,7 +40,7 @@ public class RouteController {
     @GetMapping(value = "/{originCityId}/{destinationCityId}")
     public BestRoutesResponseDTO obtainBestRoutes(@PathVariable(value = "originCityId") @NotNull Long originCityId, @PathVariable(value = "destinationCityId") @NotNull Long destinationCityId) {
 
-        Pair<City, City> originAndDestination = validateOriginAndDestination.execute(originCityId, destinationCityId);
+        validateOriginAndDestination.execute(originCityId, destinationCityId);
 
         CompletableFuture<Pair<Duration, List<City>>> fastestRouteCF = CompletableFuture.supplyAsync(() -> calculateFastestRoute.execute(originCityId, destinationCityId));
         CompletableFuture<List<City>> shortestRouteCF = CompletableFuture.supplyAsync(() -> calculateShortestRoute.execute(originCityId, destinationCityId));

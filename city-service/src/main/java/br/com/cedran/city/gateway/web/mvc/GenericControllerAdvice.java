@@ -4,6 +4,7 @@ import br.com.cedran.city.gateway.web.mvc.dto.ErrorResponse;
 import br.com.cedran.city.model.ErrorCode;
 import br.com.cedran.city.usecase.exceptions.BusinessException;
 import br.com.cedran.city.usecase.exceptions.NotFoundException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -16,6 +17,7 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 import java.util.stream.Collectors;
 
 @ControllerAdvice
+@Slf4j
 public class GenericControllerAdvice {
 
     @ExceptionHandler(BusinessException.class)
@@ -29,6 +31,7 @@ public class GenericControllerAdvice {
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> unexpectedException(final Exception exception) {
+        log.error("Controller Advice caught a unexpected exception:", exception);
         ErrorResponse errorResponse = new ErrorResponse();
         errorResponse.setErrorCode(ErrorCode.UNEXPECTED_ERROR.getErrorCode());
         errorResponse.setErrorMessage(ErrorCode.UNEXPECTED_ERROR.getMessage());

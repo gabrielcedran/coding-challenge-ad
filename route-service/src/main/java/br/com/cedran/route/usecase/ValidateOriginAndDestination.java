@@ -3,6 +3,7 @@ package br.com.cedran.route.usecase;
 import br.com.cedran.route.gateway.CityGateway;
 import br.com.cedran.route.model.City;
 import br.com.cedran.route.usecase.exceptions.BusinessException;
+import br.com.cedran.route.usecase.exceptions.NotFoundException;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.stereotype.Service;
@@ -38,6 +39,9 @@ public class ValidateOriginAndDestination {
             }
             return originAndDestination;
         } catch (InterruptedException | ExecutionException e) {
+            if (e.getCause() instanceof NotFoundException) {
+                throw (NotFoundException) e.getCause();
+            }
             throw new RuntimeException(e);
         }
     }
